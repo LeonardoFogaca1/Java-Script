@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+*{
+    padding: 10;
+    margin: 10;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(94, 139, 224);
+    color: white;
+}
