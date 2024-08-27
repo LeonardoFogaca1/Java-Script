@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgba(56, 50, 40, 0.911);
+            color:white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Dom</h1>
+    <p>Resultado:</p>
+    <p>É isso ai</p>
+    <div id="dv">CLIQUE EM MIM</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        /*
+        var d = document.getElementsByName('dv')[0]
+        window.document.write(`Está escrito isto: ${p1.innerText}`) 
+        
+        d.innerHTML = 'OMG' */
+
+        var d = document.querySelector('div#dv')
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>
