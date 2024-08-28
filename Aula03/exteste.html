@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <script>
+        var nome = (window.prompt('Qual o seu nome?'))
+        var nota1 =Number(window.prompt('qual a sua nota na prova?'))
+        var nota2 = Number(window.prompt('Qual foi a sua nota de comportamento?'))
+        var media = (nota1 + nota2) / 2
+        
+        document.write(media > 5? 
+        `Parabens, ${nome} você foi aprovado(a) com a média: ${media}` :`Meus pesames, ${nome}! Você foi Reprovado com a média: ${media}`)
+    </script>
+</body>
+</html>

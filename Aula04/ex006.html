@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            display: block;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(26, 83, 133);
+            color: white;
+            text-align: center;
+            line-height: 200px; 
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="clique()" onmouseout="obrigado()">
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.querySelector('div#area')
+        addEventListener('click', clicou)
+        addEventListener('mouseenter', clique )
+        addEventListener('mouseout', obrigado)
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'Red'
+        }
+
+        function clique() {
+            a.innerText = 'clique'
+        }
+
+        function obrigado(){
+            a.innerText = 'Obrigado'
+            a.style.background = ' rgb(26, 83, 133)'
+        }
+    </script>
+</body>
+</html>
