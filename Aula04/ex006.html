@@ -19,15 +19,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="clique()" onmouseout="obrigado()">
+    <div id="area" onclick="clicar()" onmouseenter="clique()" onmouseout="clicou()">
         Interaja...
     </div>
 
     <script>
         var a = document.querySelector('div#area')
-        addEventListener('click', clicou)
+        /*addEventListener('click', clicou)
         addEventListener('mouseenter', clique )
-        addEventListener('mouseout', obrigado)
+        addEventListener('mouseout', obrigado)*/
 
         function clicar() {
             a.innerText = 'Clicou'
@@ -38,7 +38,7 @@
             a.innerText = 'clique'
         }
 
-        function obrigado(){
+        function clicou(){
             a.innerText = 'Obrigado'
             a.style.background = ' rgb(26, 83, 133)'
         }
